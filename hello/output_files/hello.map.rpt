@@ -1,5 +1,5 @@
 Analysis & Synthesis report for hello
-Fri Feb 16 00:37:45 2024
+Fri Feb 16 01:28:26 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -55,15 +55,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Feb 16 00:37:45 2024       ;
+; Analysis & Synthesis Status        ; Successful - Fri Feb 16 01:28:26 2024       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; hello                                       ;
 ; Top-level Entity Name              ; hello                                       ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 248                                         ;
-;     Total combinational functions  ; 228                                         ;
-;     Dedicated logic registers      ; 150                                         ;
-; Total registers                    ; 150                                         ;
+; Total logic elements               ; 226                                         ;
+;     Total combinational functions  ; 206                                         ;
+;     Dedicated logic registers      ; 149                                         ;
+; Total registers                    ; 149                                         ;
 ; Total pins                         ; 21                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -172,8 +172,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -201,20 +200,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 248       ;
+; Estimated Total logic elements              ; 226       ;
 ;                                             ;           ;
-; Total combinational functions               ; 228       ;
+; Total combinational functions               ; 206       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 100       ;
-;     -- 3 input functions                    ; 23        ;
-;     -- <=2 input functions                  ; 105       ;
+;     -- 4 input functions                    ; 91        ;
+;     -- 3 input functions                    ; 13        ;
+;     -- <=2 input functions                  ; 102       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 163       ;
-;     -- arithmetic mode                      ; 65        ;
+;     -- normal mode                          ; 142       ;
+;     -- arithmetic mode                      ; 64        ;
 ;                                             ;           ;
-; Total registers                             ; 150       ;
-;     -- Dedicated logic registers            ; 150       ;
+; Total registers                             ; 149       ;
+;     -- Dedicated logic registers            ; 149       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 21        ;
@@ -223,8 +222,8 @@ refer to the applicable agreement for further details.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 70        ;
-; Total fan-out                               ; 1119      ;
-; Average fan-out                             ; 2.66      ;
+; Total fan-out                               ; 1042      ;
+; Average fan-out                             ; 2.62      ;
 +---------------------------------------------+-----------+
 
 
@@ -233,8 +232,8 @@ refer to the applicable agreement for further details.
 +-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node        ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Entity Name ; Library Name ;
 +-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+-------------+--------------+
-; |hello                            ; 228 (0)             ; 150 (0)                   ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |hello                                                ; hello       ; work         ;
-;    |ss_cntr:ss_cntr_inst|         ; 228 (0)             ; 150 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|ss_cntr:ss_cntr_inst                           ; ss_cntr     ; work         ;
+; |hello                            ; 206 (0)             ; 149 (0)                   ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |hello                                                ; hello       ; work         ;
+;    |ss_cntr:ss_cntr_inst|         ; 206 (0)             ; 149 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|ss_cntr:ss_cntr_inst                           ; ss_cntr     ; work         ;
 ;       |FSM:FSM_inst|              ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|ss_cntr:ss_cntr_inst|FSM:FSM_inst              ; FSM         ; work         ;
 ;       |MUX2:MUX2_inst|            ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|ss_cntr:ss_cntr_inst|MUX2:MUX2_inst            ; MUX2        ; work         ;
 ;       |b2ss:b2ss_inst|            ; 18 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|ss_cntr:ss_cntr_inst|b2ss:b2ss_inst            ; b2ss        ; work         ;
@@ -244,7 +243,7 @@ refer to the applicable agreement for further details.
 ;       |dig_rg:dig_rg_inst|        ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|ss_cntr:ss_cntr_inst|dig_rg:dig_rg_inst        ; dig_rg      ; work         ;
 ;       |rst_rg:rst_rg_inst|        ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|ss_cntr:ss_cntr_inst|rst_rg:rst_rg_inst        ; rst_rg      ; work         ;
 ;       |ss_rg:ss_rg_inst|          ; 0 (0)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|ss_cntr:ss_cntr_inst|ss_rg:ss_rg_inst          ; ss_rg       ; work         ;
-;       |word_gen:word_gen_inst|    ; 84 (84)             ; 47 (47)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|ss_cntr:ss_cntr_inst|word_gen:word_gen_inst    ; word_gen    ; work         ;
+;       |word_gen:word_gen_inst|    ; 62 (62)             ; 46 (46)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hello|ss_cntr:ss_cntr_inst|word_gen:word_gen_inst    ; word_gen    ; work         ;
 +-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -308,11 +307,6 @@ Encoding Type:  One-Hot
 ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|world_ROM~32   ; Stuck at GND due to stuck port clock                                  ;
 ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|world_ROM~33   ; Stuck at GND due to stuck port clock                                  ;
 ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|world_ROM~34   ; Stuck at GND due to stuck port clock                                  ;
-; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|world_ROM~35   ; Stuck at GND due to stuck port clock                                  ;
-; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|world_ROM~36   ; Stuck at GND due to stuck port clock                                  ;
-; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|world_ROM~37   ; Stuck at GND due to stuck port clock                                  ;
-; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|world_ROM~38   ; Stuck at GND due to stuck port clock                                  ;
-; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|world_ROM~39   ; Stuck at GND due to stuck port clock                                  ;
 ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|hello_ROM~0    ; Stuck at GND due to stuck port clock                                  ;
 ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|hello_ROM~1    ; Stuck at GND due to stuck port clock                                  ;
 ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|hello_ROM~2    ; Stuck at GND due to stuck port clock                                  ;
@@ -343,11 +337,6 @@ Encoding Type:  One-Hot
 ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|hello_ROM~27   ; Stuck at GND due to stuck port clock                                  ;
 ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|hello_ROM~28   ; Stuck at GND due to stuck port clock                                  ;
 ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|hello_ROM~29   ; Stuck at GND due to stuck port clock                                  ;
-; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|hello_ROM~30   ; Stuck at GND due to stuck port clock                                  ;
-; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|hello_ROM~31   ; Stuck at GND due to stuck port clock                                  ;
-; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|hello_ROM~32   ; Stuck at GND due to stuck port clock                                  ;
-; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|hello_ROM~33   ; Stuck at GND due to stuck port clock                                  ;
-; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|hello_ROM~34   ; Stuck at GND due to stuck port clock                                  ;
 ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|goodbye_ROM~0  ; Stuck at GND due to stuck port clock                                  ;
 ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|goodbye_ROM~1  ; Stuck at GND due to stuck port clock                                  ;
 ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|goodbye_ROM~2  ; Stuck at GND due to stuck port clock                                  ;
@@ -388,13 +377,8 @@ Encoding Type:  One-Hot
 ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|goodbye_ROM~37 ; Stuck at GND due to stuck port clock                                  ;
 ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|goodbye_ROM~38 ; Stuck at GND due to stuck port clock                                  ;
 ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|goodbye_ROM~39 ; Stuck at GND due to stuck port clock                                  ;
-; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|goodbye_ROM~40 ; Stuck at GND due to stuck port clock                                  ;
-; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|goodbye_ROM~41 ; Stuck at GND due to stuck port clock                                  ;
-; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|goodbye_ROM~42 ; Stuck at GND due to stuck port clock                                  ;
-; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|goodbye_ROM~43 ; Stuck at GND due to stuck port clock                                  ;
-; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|goodbye_ROM~44 ; Stuck at GND due to stuck port clock                                  ;
-; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|i[4..7]        ; Lost fanout                                                           ;
-; Total Number of Removed Registers = 130                    ;                                                                       ;
+; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|i[3..7]        ; Lost fanout                                                           ;
+; Total Number of Removed Registers = 116                    ;                                                                       ;
 +------------------------------------------------------------+-----------------------------------------------------------------------+
 
 
@@ -405,7 +389,8 @@ Encoding Type:  One-Hot
 +--------------------------------------------------+--------------------+---------------------------------------------------+
 ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|i[7] ; Lost Fanouts       ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|i[6], ;
 ;                                                  ;                    ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|i[5], ;
-;                                                  ;                    ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|i[4]  ;
+;                                                  ;                    ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|i[4], ;
+;                                                  ;                    ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|i[3]  ;
 +--------------------------------------------------+--------------------+---------------------------------------------------+
 
 
@@ -414,10 +399,10 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 150   ;
+; Total registers                              ; 149   ;
 ; Number of registers using Synchronous Clear  ; 71    ;
-; Number of registers using Synchronous Load   ; 1     ;
-; Number of registers using Asynchronous Clear ; 34    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 33    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 6     ;
 ; Number of registers using Preset             ; 0     ;
@@ -445,8 +430,8 @@ Encoding Type:  One-Hot
 ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|A[4]       ; 1       ;
 ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|B[4]       ; 2       ;
 ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|D[4]       ; 2       ;
-; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|next[1]    ; 24      ;
-; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|read_first ; 39      ;
+; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|next[1]    ; 21      ;
+; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|read_first ; 34      ;
 ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|next[0]    ; 1       ;
 ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|next[4]    ; 1       ;
 ; ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|next[3]    ; 1       ;
@@ -570,24 +555,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 21                          ;
-; cycloneiii_ff         ; 150                         ;
+; cycloneiii_ff         ; 149                         ;
 ;     CLR               ; 29                          ;
-;     CLR SLD           ; 1                           ;
 ;     ENA               ; 2                           ;
 ;     ENA CLR           ; 4                           ;
 ;     SCLR              ; 71                          ;
 ;     plain             ; 43                          ;
-; cycloneiii_lcell_comb ; 228                         ;
-;     arith             ; 65                          ;
-;         2 data inputs ; 65                          ;
-;     normal            ; 163                         ;
+; cycloneiii_lcell_comb ; 206                         ;
+;     arith             ; 64                          ;
+;         2 data inputs ; 64                          ;
+;     normal            ; 142                         ;
 ;         1 data inputs ; 5                           ;
-;         2 data inputs ; 35                          ;
-;         3 data inputs ; 23                          ;
-;         4 data inputs ; 100                         ;
+;         2 data inputs ; 33                          ;
+;         3 data inputs ; 13                          ;
+;         4 data inputs ; 91                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.05                        ;
+; Average LUT depth     ; 2.95                        ;
 +-----------------------+-----------------------------+
 
 
@@ -606,7 +590,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri Feb 16 00:37:36 2024
+    Info: Processing started: Fri Feb 16 01:28:16 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off hello -c hello
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file word_gen.sv
@@ -667,24 +651,24 @@ Info (276014): Found 4 instances of uninferred RAM logic
     Info (276004): RAM logic "ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|goodbye_ROM" is uninferred due to inappropriate RAM size File: C:/QuartusProjects/verilog-portfolio/hello/word_gen.sv Line: 8
     Info (276004): RAM logic "ss_cntr:ss_cntr_inst|word_gen:word_gen_inst|world_ROM" is uninferred due to inappropriate RAM size File: C:/QuartusProjects/verilog-portfolio/hello/word_gen.sv Line: 10
 Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/QuartusProjects/verilog-portfolio/hello/db/hello.ram0_b2ss_345861.hdl.mif" contains "don't care" values -- overwriting them with 0s
-Critical Warning (127005): Memory depth (8) in the design file differs from memory depth (7) in the Memory Initialization File "C:/QuartusProjects/verilog-portfolio/hello/db/hello.ram0_word_gen_dcdc8e7.hdl.mif" -- setting initial value for remaining addresses to 0
-Critical Warning (127005): Memory depth (16) in the design file differs from memory depth (9) in the Memory Initialization File "C:/QuartusProjects/verilog-portfolio/hello/db/hello.ram1_word_gen_dcdc8e7.hdl.mif" -- setting initial value for remaining addresses to 0
-Info (13000): Registers with preset signals will power-up high File: C:/QuartusProjects/verilog-portfolio/hello/word_gen.sv Line: 98
+Critical Warning (127005): Memory depth (8) in the design file differs from memory depth (7) in the Memory Initialization File "C:/QuartusProjects/verilog-portfolio/hello/db/hello.ram2_word_gen_dcdc8e7.hdl.mif" -- setting initial value for remaining addresses to 0
+Critical Warning (127005): Memory depth (8) in the design file differs from memory depth (6) in the Memory Initialization File "C:/QuartusProjects/verilog-portfolio/hello/db/hello.ram0_word_gen_dcdc8e7.hdl.mif" -- setting initial value for remaining addresses to 0
+Info (13000): Registers with preset signals will power-up high File: C:/QuartusProjects/verilog-portfolio/hello/word_gen.sv Line: 95
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 6 registers lost all their fanouts during netlist optimizations.
+Info (17049): 7 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/QuartusProjects/verilog-portfolio/hello/output_files/hello.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 271 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 248 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
     Info (21059): Implemented 11 output pins
-    Info (21061): Implemented 250 logic cells
+    Info (21061): Implemented 227 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 4775 megabytes
-    Info: Processing ended: Fri Feb 16 00:37:45 2024
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Peak virtual memory: 4760 megabytes
+    Info: Processing ended: Fri Feb 16 01:28:26 2024
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:19
 
 
 +------------------------------------------+

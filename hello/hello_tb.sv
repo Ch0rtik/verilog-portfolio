@@ -7,7 +7,7 @@ module hello_tb();
 	reg [4:1] dig;
 	reg [7:0] sw;
 	reg [6:0] tb_mem[0:127];
-	wire [6:0] tb_ss;
+	wire [6:0] tb_asc;
 	
 	hello #(100) hello_inst (clk, rst_n, sw, ss, dig);
 	
@@ -20,9 +20,9 @@ module hello_tb();
 	end
 	
 	initial begin
-		#(15000*T)
+		#(20000*T)
 		sw = 8'b00010000;
-		#(15000*T)
+		#(40000*T)
 		rst_n = 1'b0;
 		#(5000*T)
 		rst_n = 1'b0;
@@ -30,6 +30,6 @@ module hello_tb();
 		$stop;
 	end
 	
-	assign tb_ss = tb_mem[ss];
+	assign tb_asc = tb_mem[ss];
 	
 endmodule

@@ -4,10 +4,10 @@ module word_gen (
 	input [7:0] sw,
 	output reg [4:0] A, B, C, D);
 	
-	reg [4:0] hello_ROM [6:0];
-	reg [4:0] goodbye_ROM [8:0];
+	reg [4:0] hello_ROM [5:0];
+	reg [4:0] goodbye_ROM [7:0];
 	
-	reg [4:0] world_ROM [7:0];
+	reg [4:0] world_ROM [6:0];
 	
 	reg [7:0] sw_new, sw_old; 
 	
@@ -30,7 +30,6 @@ module word_gen (
 		hello_ROM[3] 	= 5'd22;
 		hello_ROM[4] 	= 5'h00;
 		hello_ROM[5] 	= 5'd30;
-		hello_ROM[6] 	= 5'd31;
 		
 		goodbye_ROM[0] = 5'd23;
 		goodbye_ROM[1] = 5'h00;
@@ -40,7 +39,6 @@ module word_gen (
 		goodbye_ROM[5] = 5'd24;
 		goodbye_ROM[6] = 5'h0E;
 		goodbye_ROM[7] = 5'd30;
-		goodbye_ROM[8] = 5'd31;
 		
 		world_ROM[0] 	= 5'd22;
 		world_ROM[1] 	= 5'd18;
@@ -49,7 +47,6 @@ module word_gen (
 		world_ROM[4] 	= 5'd22;
 		world_ROM[5] 	= 5'h0D;
 		world_ROM[6] 	= 5'd30;
-		world_ROM[7] 	= 5'd31;
 		
 		i = 8'd0;
 		

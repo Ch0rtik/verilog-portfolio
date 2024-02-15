@@ -2,13 +2,12 @@
 -- word_gen
 -- end_signature
 WIDTH=5;
-DEPTH=9;
+DEPTH=8;
 
 ADDRESS_RADIX=UNS;
 DATA_RADIX=BIN;
 
 CONTENT BEGIN
-	8 :	11111;
 	7 :	11110;
 	6 :	01110;
 	5 :	11000;
