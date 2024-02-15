@@ -1,0 +1,102 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/QuartusProjects/verilog-portfolio/PWM/simulation/modelsim
+vCMP
+Z1 !s110 1708025982
+!i10b 1
+!s100 [lffl6`MY]^U@F6gLQgL61
+I=S<BWXef`G4>[I`6QfJJk2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1707338063
+8C:/QuartusProjects/verilog-portfolio/PWM/CMP.v
+FC:/QuartusProjects/verilog-portfolio/PWM/CMP.v
+Z3 L0 39
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1708025982.000000
+!s107 C:/QuartusProjects/verilog-portfolio/PWM/CMP.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QuartusProjects/verilog-portfolio/PWM|C:/QuartusProjects/verilog-portfolio/PWM/CMP.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+C:/QuartusProjects/verilog-portfolio/PWM
+Z8 tCvgOpt 0
+n@c@m@p
+vCNT
+R1
+!i10b 1
+!s100 67@`BL<43Ri[a5U7g0RFC1
+Ij2mW1OL:>?d@K:KU8d98V2
+R2
+R0
+w1707337406
+8C:/QuartusProjects/verilog-portfolio/PWM/CNT.v
+FC:/QuartusProjects/verilog-portfolio/PWM/CNT.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/QuartusProjects/verilog-portfolio/PWM/CNT.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QuartusProjects/verilog-portfolio/PWM|C:/QuartusProjects/verilog-portfolio/PWM/CNT.v|
+!i113 1
+R6
+R7
+R8
+n@c@n@t
+vPWM
+R1
+!i10b 1
+!s100 fGo7eBC>CoJKZab^C_Y481
+IekAjle4<PmFBi4:U<LDgP1
+R2
+R0
+w1708025652
+8C:/QuartusProjects/verilog-portfolio/PWM/PWM.v
+FC:/QuartusProjects/verilog-portfolio/PWM/PWM.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/QuartusProjects/verilog-portfolio/PWM/PWM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QuartusProjects/verilog-portfolio/PWM|C:/QuartusProjects/verilog-portfolio/PWM/PWM.v|
+!i113 1
+R6
+R7
+R8
+n@p@w@m
+vtb_PWM
+R1
+!i10b 1
+!s100 K>@f=n_Ho>]ICL3[3>P0z3
+IYmjXjDn6bZ9YgmIOI2Bo<0
+R2
+R0
+w1708025950
+8C:/QuartusProjects/verilog-portfolio/PWM/tb_PWM.v
+FC:/QuartusProjects/verilog-portfolio/PWM/tb_PWM.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/QuartusProjects/verilog-portfolio/PWM/tb_PWM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/QuartusProjects/verilog-portfolio/PWM|C:/QuartusProjects/verilog-portfolio/PWM/tb_PWM.v|
+!i113 1
+R6
+R7
+R8
+ntb_@p@w@m

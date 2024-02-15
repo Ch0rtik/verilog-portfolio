@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at word_gen.sv(75): always construct contains both blocking and non-blocking assignments File: C:/QuartusProjects/verilog-portfolio/hello/word_gen.sv Line: 75
+Warning (10268): Verilog HDL information at word_gen.sv(87): always construct contains both blocking and non-blocking assignments File: C:/QuartusProjects/verilog-portfolio/hello/word_gen.sv Line: 87

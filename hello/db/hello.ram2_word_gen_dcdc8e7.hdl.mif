@@ -1,0 +1,19 @@
+-- begin_signature
+-- word_gen
+-- end_signature
+WIDTH=5;
+DEPTH=8;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	7 :	11111;
+	6 :	11110;
+	5 :	01101;
+	4 :	10110;
+	3 :	10100;
+	2 :	00000;
+	1 :	10010;
+	0 :	10110;
+END;

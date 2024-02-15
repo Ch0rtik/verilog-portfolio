@@ -1,0 +1,138 @@
+module word_gen (
+	input clk,
+	input reset,
+	input [7:0] sw,
+	output reg [4:0] A, B, C, D);
+	
+	reg [4:0] hello_ROM [7:0];
+	reg [4:0] vova_ROM [4:0];
+	reg [4:0] ruden_ROM [6:0];
+	
+	reg [4:0] world_ROM [8:0];
+	reg [4:0] ueban_ROM [7:0];
+	reg [4:0] ebobo_ROM [7:0];
+	reg [4:0] ROMa [5:0];
+	
+	reg [7:0] sw_new, sw_old; 
+	
+	reg [4:0] next;
+	
+	reg [7:0] i;
+	
+	reg read_first;
+	
+	reg switch_changed;
+	
+	reg [3:0] name_type;
+	reg [3:0] word_type;
+	
+	initial begin
+		hello_ROM[0] = 5'd18;
+		hello_ROM[1] = 5'd16;
+		hello_ROM[2] = 5'd14;
+		hello_ROM[3] = 5'd1;
+		hello_ROM[4] = 5'd1;
+		hello_ROM[5] = 5'd0;
+		hello_ROM[7] = 5'd31;
+		
+		ROMa[0] = 5'd22;
+		ROMa[1] = 5'd0;
+		ROMa[2] = 5'd21;
+		ROMa[3] = 5'd17;
+		ROMa[4] = 5'd10;
+		ROMa[5] = 5'd31;
+		
+		world_ROM[0] = 5'd18;
+		world_ROM[1] = 5'd19;
+		world_ROM[2] = 5'd25;
+		world_ROM[3] = 5'd0;
+		world_ROM[4] = 5'd21;
+		world_ROM[5] = 5'd1;
+		world_ROM[6] = 5'd13;
+		world_ROM[7] = 5'd18;
+		world_ROM[8] = 5'd31;
+		
+		i = 8'd0;
+		
+		read_first = 1'b1;
+		
+		A <= 5'd18;
+		B <= 5'd18;
+		C <= 5'd18;
+		D <= 5'd18;
+		next <= 5'd18;
+		
+		sw_new = 8'd0;
+		sw_old = 8'd0;
+		
+		name_type = 4'b0;
+		word_type = 4'b0;
+		
+		switch_changed = 1'b0;
+	end
+	
+	always @(posedge clk) begin
+		sw_new <= sw;
+		sw_old <= sw_new;
+		
+		name_type = sw_new[7:4];
+		word_type = sw_new[3:0];
+		if (sw_new !== sw_old) begin
+			switch_changed = 1'b1;
+		end else
+			switch_changed = 1'b0;
+	end
+	
+	always @(posedge clk) 
+	begin
+		if (switch_changed) begin
+			A <= 5'd18;
+			B <= 5'd18;
+			C <= 5'd18;
+			D <= 5'd18;
+			next <= 5'd18;
+			i = 8'd0;
+			read_first = 1'b1;
+		end else begin
+			A <= B;
+			B <= C;
+			C <= D;
+			if (read_first)
+				case (name_type)
+					4'b0000: begin
+									D <= hello_ROM[i];
+									next = hello_ROM[i + 1];
+								end
+					default: begin
+									D <= hello_ROM[i];
+									next = hello_ROM[i + 1];
+								end
+				endcase
+			else 
+				case (word_type)
+					4'b0000: begin
+									D <= world_ROM[i];
+									next = world_ROM[i + 1];
+								end
+					default: begin
+									D <= world_ROM[i];
+									next = world_ROM[i + 1];
+								end
+				endcase
+			if (next != 5'd31)	
+				i = i + 8'd1;
+			else begin
+				i = 8'd0;
+				if(!read_first) begin
+					A <= 5'd18;
+					B <= 5'd18;
+					C <= 5'd18;
+					D <= 5'd18;
+					next = 5'd18;
+				end
+				read_first = !read_first;
+			end
+		end
+	end
+	
+endmodule

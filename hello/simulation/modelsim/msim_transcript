@@ -1,0 +1,162 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do hello_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/QuartusProjects/verilog-portfolio/hello {C:/QuartusProjects/verilog-portfolio/hello/word_gen.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:38:33 on Feb 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/verilog-portfolio/hello" C:/QuartusProjects/verilog-portfolio/hello/word_gen.sv 
+# -- Compiling module word_gen
+# 
+# Top level modules:
+# 	word_gen
+# End time: 00:38:33 on Feb 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/verilog-portfolio/hello {C:/QuartusProjects/verilog-portfolio/hello/ss_rg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:38:33 on Feb 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/verilog-portfolio/hello" C:/QuartusProjects/verilog-portfolio/hello/ss_rg.sv 
+# -- Compiling module ss_rg
+# 
+# Top level modules:
+# 	ss_rg
+# End time: 00:38:33 on Feb 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/verilog-portfolio/hello {C:/QuartusProjects/verilog-portfolio/hello/ss_cntr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:38:33 on Feb 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/verilog-portfolio/hello" C:/QuartusProjects/verilog-portfolio/hello/ss_cntr.sv 
+# -- Compiling module ss_cntr
+# 
+# Top level modules:
+# 	ss_cntr
+# End time: 00:38:33 on Feb 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/verilog-portfolio/hello {C:/QuartusProjects/verilog-portfolio/hello/rst_rg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:38:33 on Feb 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/verilog-portfolio/hello" C:/QuartusProjects/verilog-portfolio/hello/rst_rg.sv 
+# -- Compiling module rst_rg
+# 
+# Top level modules:
+# 	rst_rg
+# End time: 00:38:33 on Feb 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/verilog-portfolio/hello {C:/QuartusProjects/verilog-portfolio/hello/MUX2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:38:33 on Feb 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/verilog-portfolio/hello" C:/QuartusProjects/verilog-portfolio/hello/MUX2.sv 
+# -- Compiling module MUX2
+# 
+# Top level modules:
+# 	MUX2
+# End time: 00:38:33 on Feb 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/verilog-portfolio/hello {C:/QuartusProjects/verilog-portfolio/hello/hello.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:38:33 on Feb 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/verilog-portfolio/hello" C:/QuartusProjects/verilog-portfolio/hello/hello.sv 
+# -- Compiling module hello
+# 
+# Top level modules:
+# 	hello
+# End time: 00:38:33 on Feb 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/verilog-portfolio/hello {C:/QuartusProjects/verilog-portfolio/hello/FSM.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:38:33 on Feb 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/verilog-portfolio/hello" C:/QuartusProjects/verilog-portfolio/hello/FSM.sv 
+# -- Compiling module FSM
+# 
+# Top level modules:
+# 	FSM
+# End time: 00:38:33 on Feb 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/verilog-portfolio/hello {C:/QuartusProjects/verilog-portfolio/hello/d_rg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:38:33 on Feb 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/verilog-portfolio/hello" C:/QuartusProjects/verilog-portfolio/hello/d_rg.sv 
+# -- Compiling module d_rg
+# 
+# Top level modules:
+# 	d_rg
+# End time: 00:38:33 on Feb 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/verilog-portfolio/hello {C:/QuartusProjects/verilog-portfolio/hello/dig_rg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:38:33 on Feb 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/verilog-portfolio/hello" C:/QuartusProjects/verilog-portfolio/hello/dig_rg.sv 
+# -- Compiling module dig_rg
+# 
+# Top level modules:
+# 	dig_rg
+# End time: 00:38:33 on Feb 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/verilog-portfolio/hello {C:/QuartusProjects/verilog-portfolio/hello/cnt_div.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:38:33 on Feb 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/verilog-portfolio/hello" C:/QuartusProjects/verilog-portfolio/hello/cnt_div.sv 
+# -- Compiling module cnt_div
+# 
+# Top level modules:
+# 	cnt_div
+# End time: 00:38:33 on Feb 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/QuartusProjects/verilog-portfolio/hello {C:/QuartusProjects/verilog-portfolio/hello/b2ss.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:38:33 on Feb 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/verilog-portfolio/hello" C:/QuartusProjects/verilog-portfolio/hello/b2ss.sv 
+# -- Compiling module b2ss
+# 
+# Top level modules:
+# 	b2ss
+# End time: 00:38:33 on Feb 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/QuartusProjects/verilog-portfolio/hello {C:/QuartusProjects/verilog-portfolio/hello/hello_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:38:33 on Feb 16,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/QuartusProjects/verilog-portfolio/hello" C:/QuartusProjects/verilog-portfolio/hello/hello_tb.sv 
+# -- Compiling module hello_tb
+# 
+# Top level modules:
+# 	hello_tb
+# End time: 00:38:33 on Feb 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  hello_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" hello_tb 
+# Start time: 00:38:34 on Feb 16,2024
+# Loading sv_std.std
+# Loading work.hello_tb
+# Loading work.hello
+# Loading work.ss_cntr
+# Loading work.rst_rg
+# Loading work.cnt_div
+# Loading work.FSM
+# Loading work.dig_rg
+# Loading work.word_gen
+# Loading work.d_rg
+# Loading work.MUX2
+# Loading work.b2ss
+# Loading work.ss_rg
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : C:/QuartusProjects/verilog-portfolio/hello/hello_tb.sv(30)
+#    Time: 4 ms  Iteration: 0  Instance: /hello_tb
+# Break in Module hello_tb at C:/QuartusProjects/verilog-portfolio/hello/hello_tb.sv line 30
+# End time: 00:44:36 on Feb 16,2024, Elapsed time: 0:06:02
+# Errors: 0, Warnings: 0

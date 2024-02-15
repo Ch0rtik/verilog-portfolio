@@ -1,0 +1,161 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'ss_cntr:ss_cntr_inst|cnt_div:cnt_div_inst|ENA'
+Slack : -4.299
+TNS   : -139.761
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -4.078
+TNS   : -195.421
+
+Type  : Slow 1200mV 85C Model Setup 'ss_cntr:ss_cntr_inst|cnt_div:cnt_div_word_inst|ENA'
+Slack : -3.617
+TNS   : -74.742
+
+Type  : Slow 1200mV 85C Model Hold 'ss_cntr:ss_cntr_inst|cnt_div:cnt_div_word_inst|ENA'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.631
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ss_cntr:ss_cntr_inst|cnt_div:cnt_div_inst|ENA'
+Slack : 0.761
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'ss_cntr:ss_cntr_inst|cnt_div:cnt_div_word_inst|ENA'
+Slack : -1.946
+TNS   : -54.422
+
+Type  : Slow 1200mV 85C Model Recovery 'clk'
+Slack : -1.689
+TNS   : -6.611
+
+Type  : Slow 1200mV 85C Model Removal 'ss_cntr:ss_cntr_inst|cnt_div:cnt_div_word_inst|ENA'
+Slack : 0.947
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'clk'
+Slack : 2.043
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -107.090
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ss_cntr:ss_cntr_inst|cnt_div:cnt_div_word_inst|ENA'
+Slack : -1.487
+TNS   : -69.889
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ss_cntr:ss_cntr_inst|cnt_div:cnt_div_inst|ENA'
+Slack : -1.487
+TNS   : -49.071
+
+Type  : Slow 1200mV 0C Model Setup 'ss_cntr:ss_cntr_inst|cnt_div:cnt_div_inst|ENA'
+Slack : -4.009
+TNS   : -130.235
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -3.780
+TNS   : -179.914
+
+Type  : Slow 1200mV 0C Model Setup 'ss_cntr:ss_cntr_inst|cnt_div:cnt_div_word_inst|ENA'
+Slack : -3.276
+TNS   : -66.731
+
+Type  : Slow 1200mV 0C Model Hold 'ss_cntr:ss_cntr_inst|cnt_div:cnt_div_word_inst|ENA'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.566
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ss_cntr:ss_cntr_inst|cnt_div:cnt_div_inst|ENA'
+Slack : 0.704
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'ss_cntr:ss_cntr_inst|cnt_div:cnt_div_word_inst|ENA'
+Slack : -1.754
+TNS   : -48.080
+
+Type  : Slow 1200mV 0C Model Recovery 'clk'
+Slack : -1.520
+TNS   : -5.933
+
+Type  : Slow 1200mV 0C Model Removal 'ss_cntr:ss_cntr_inst|cnt_div:cnt_div_word_inst|ENA'
+Slack : 0.801
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'clk'
+Slack : 1.827
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -107.090
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ss_cntr:ss_cntr_inst|cnt_div:cnt_div_word_inst|ENA'
+Slack : -1.487
+TNS   : -69.889
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ss_cntr:ss_cntr_inst|cnt_div:cnt_div_inst|ENA'
+Slack : -1.487
+TNS   : -49.071
+
+Type  : Fast 1200mV 0C Model Setup 'ss_cntr:ss_cntr_inst|cnt_div:cnt_div_inst|ENA'
+Slack : -1.222
+TNS   : -39.265
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.099
+TNS   : -46.953
+
+Type  : Fast 1200mV 0C Model Setup 'ss_cntr:ss_cntr_inst|cnt_div:cnt_div_word_inst|ENA'
+Slack : -1.015
+TNS   : -14.431
+
+Type  : Fast 1200mV 0C Model Hold 'ss_cntr:ss_cntr_inst|cnt_div:cnt_div_word_inst|ENA'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.266
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ss_cntr:ss_cntr_inst|cnt_div:cnt_div_inst|ENA'
+Slack : 0.303
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'ss_cntr:ss_cntr_inst|cnt_div:cnt_div_word_inst|ENA'
+Slack : -0.319
+TNS   : -8.197
+
+Type  : Fast 1200mV 0C Model Recovery 'clk'
+Slack : -0.257
+TNS   : -0.950
+
+Type  : Fast 1200mV 0C Model Removal 'ss_cntr:ss_cntr_inst|cnt_div:cnt_div_word_inst|ENA'
+Slack : 0.349
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'clk'
+Slack : 0.879
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -94.052
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ss_cntr:ss_cntr_inst|cnt_div:cnt_div_word_inst|ENA'
+Slack : -1.000
+TNS   : -47.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ss_cntr:ss_cntr_inst|cnt_div:cnt_div_inst|ENA'
+Slack : -1.000
+TNS   : -33.000
+
+------------------------------------------------------------
